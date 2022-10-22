@@ -1,0 +1,86 @@
+body{
+    background-color: #e0e8ee;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#pixar{
+    font-size: 40px;
+    margin-left: 50px;
+    transition: transform 1s;
+}
+#pixar:hover{
+    transform:scale(1.3)
+}
+li{
+    display: inline-block;
+    margin-left: 40px;
+    font-size:20px;
+    color:#088;
+    transition: transform 1s;
+}
+li:hover{
+    transform:scale(1.3)
+}
+#img{
+    height:500px;
+    width:500px;
+    background-size: cover;
+    background-image:url(./zyro-image\ \(2\).png);
+    margin-right: 100px;
+}
+#cont{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#box{
+    width:80%;
+    height:500px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:5px solid #0ff;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 20px #000;
+    transition: box-shadow 1s;
+    flex-wrap: wrap;
+}
+#box:hover{
+    box-shadow: 15px 15px 80px #000;
+}
+#text{
+    width:500px;
+    height:400px;
+    margin-left: 100px;
+}
+#title{
+    font-size: 40px;
+    color:#0ff
+}
+#desc{
+    font-size:25px
+}
+
+@media screen and (max-width:600px){
+    #box{
+        margin:0px;
+        height:600px;
+        padding: 0px;
+    }
+    #text{
+        padding: 0px;
+        margin:0px;
+        margin-bottom: 100px;
+    }
+    #box{
+        justify-content: center;
+    }
+    #img{
+        background-size: 100% 100%;
+    }
+}
